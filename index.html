@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProyectoFinal</title>
+    <link rel="stylesheet" href="Pagina_inicial_IT.css">
+    <script src="Scripts.js"></script>
+    <!--AOS animacion  libreria-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--Iconos de font awesomeness-->
+    <script src="https://kit.fontawesome.com/67835dad66.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!--Modal de bienvenida-->
+    <div id="modalBienvenida">
+        <div id="modalB">
+            <h1>Bienvenido tu privacidad es importante para nosotros</h1>
+            <p id="textoMB">Nosotros y nuestros socios almacenamos o accedemos a informaci&iacute;n en un dispositivo, tales como cookies, y procesamos datos personales, tales como identificadores &uacute;nicos e informaci&oacute;n estándar enviada por un dispositivo, para anuncios y contenido personalizados, medición de anuncios y del contenido e informaci&oacute;n sobre el p&uacute;blico, así como para desarrollar y mejorar productos.
+
+                Con su permiso, nosotros y nuestros socios podemos utilizar datos de localizaci&oacute;n geogr&acute;fica precisa e identificación mediante las caracter&iacute;sticas de dispositivos. Puede hacer clic para otorgarnos su consentimiento a nosotros y a nuestros socios para que llevemos a cabo el procesamiento previamente descrito. De forma alternativa, puede acceder a informaci&oacute;n m&acute;s detallada y cambiar sus preferencias antes de otorgar o negar su consentimiento.
+
+                Tenga en cuenta que alg&uacute;n procesamiento de sus datos personales puede no requerir de su consentimiento, pero usted tiene el derecho de rechazar tal procesamiento. Sus preferencias se aplicar&acute;n solo a este sitio web. Puede cambiar sus preferencias en cualquier momento entrando de nuevo en este sitio web o visitando nuestra pol&iacute;tica de privacidad.</p>
+                <button id="AceptarMB" onclick="cerrar_modalB()">ACEPTO</button>
+                <button id="MasInfo_MB" onclick="cerrar_modalB()">M&Aacute;S INFORMACI&Oacute;N</button>
+        </div>
+    </div>
+    <!--Seccion del encabezado-->
+
+    <header id="encabezado">
+        
+        <!--Seccion del menu-->
+        
+        <nav id="NavMenu">
+            <img src="/imagenes/logo.png" alt="Logo de Integral Training" id="logo">
+            <ul id="menu">
+                <li class="elementoMenu">
+                    <a href="">Area de cliente</a>
+                </li>
+                <li class="elementoMenu">
+                    <a href="">Acerca de</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--Titulos de la pagina-->
+          <h1 id="tituloP">INTEGRAL TRAINING</h1>
+          <h2 id="subtitulo">Se la mejor versi&oacute;n de ti mismo</h2>
+        <!--Texto de introduccion-->
+        <div id="Contenedor_partido">
+            <div class="contenedor_columna">
+                <div class="imgR">
+                    <p class="texto1">Es la hora de cambiar tu vida, nosotros haremos que se cumplan tus objetivos con nuestros planes.</p>
+                </div>
+                <div class="imgR">
+                    <img src="/imagenes/ImagenG.jpg" alt="" id="reto">
+                </div>
+            </div>
+            <div class="contenedor_columna">
+               <p class="texto1">Ya puedes entrenar con nosotros desde la app #IntegralTraining Los programas estan a tu disposici&oacute;n dependiendo si quiere entrenar en casa o gimnasio. Descargala en un solo click</p>
+               <button id="Descarga" href="">Unet&eacute; clicando aqu&iacute;</button>
+            </div>
+            <div class="contenedor_columna">
+                <div class="barra">
+                    <label id="ImgBarra">☰</label>
+                    <h2 class="Titulo2">Men&uacute;</h2>
+                    <ul class="list">
+                        <ol class="puntero">
+                            <a class="enlace_menuL" href="#">Perfil</a>
+                        </ol>
+                        <ol>
+                            <a class="enlace_menuL" href="#Informacion">M&aacute;s informaci&oacute;n</a>
+                        </ol>
+                        <ol>
+                            <a class="enlace_menuL" href="#">Contacto</a>
+                        </ol>
+                        <ol>
+                            <a class="enlace_menuL" href="#">Nuestros planes</a>
+                        </ol>
+                    </ul>
+                </div>
+            </div>
+            <div class="contenedor_columna">
+               <p class="texto1">Todos los programas de Integral Training se adaptan a tu manera, puedes entrenar en casa, gym o al aire libre si lo prefieres. Con nosotros no tendras limitaci&oacute;s o excusas para no entrenar.</p>
+
+            </div>
+        </div>
+    </header>
+    <section id="Informacion">
+        <div id="PrimerB" class="mitad">
+           <h1 id="info">¿Qu&eacute; debo de tener en cuenta para inscribirme?</h1>
+           <!-- PRIMERA IMAGEN GIRATORIA-->
+           <div class="contenedorInfo">
+            <div class="contenedorPI front">
+             <img src="/imagenes/pruebaH1.jpg" alt="">
+             <h3>Principios</h3>
+            </div>
+            <div class="contenedorPI back">
+              <h3>Principios</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div class="link">
+                  <a href="#">Detalles</a>
+              </div>
+            </div>
+           </div>
+           <!-- SEGUNDA IMAGEN GIRATORIA-->
+          <div class="contenedorInfo">
+            <div class="contenedorPI front">
+             <img src="/imagenes/pruebaH2.jpg" alt="">
+             <h3>Retos</h3>
+            </div>
+            <div class="contenedorPI back">
+              <h3>Retos</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div class="link">
+                  <a href="#">Detalles</a>
+              </div>
+            </div>
+           </div>
+           <!-- TERCERA IMAGEN GIRATORIA-->
+           <div class="contenedorInfo">
+            <div class="contenedorPI front">
+             <img src="/imagenes/pruebaH3.jpg" alt="">
+             <h3>Actividades dirigidas</h3>
+            </div>
+            <div class="contenedorPI back">
+              <h3>Actividades dirigidas</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div class="link">
+                  <a href="#">Detalles</a>
+              </div>
+            </div>
+           </div>
+        </div>
+        <div id="SegundoB" class="mitad">
+            <h1 id="info">¿Quieres estar al día de todas las novedades?</h1>
+            <h2 id="info2">D&eacute;janos tu contacto y te enviaremos toda la informaci&oacute;n</h2>
+            <div class="contenedorFormulario">
+                <form action="#" class="formularioB">
+                    <input class="Contacto_info" type="email" name="Correo" placeholder="Correo Electronico" id="forcorreo" required>
+                    <div class="checkC">
+                        <input  class="tipo_checkbox" type="checkbox" >
+                        <p>Consiento la recepción de publicidad, Promociones y Noticias.</p>
+                    </div>
+                    
+                    <div class="checkC">
+                        <input  class="tipo_checkbox" type="checkbox"  >
+                        <p>Consiento de manera expresa el consentimiento a recibir mensajes telefonicos.</p>
+                    </div>
+                </form>
+                <form action="#" class="formularioB">
+                    <input class="Contacto_info" type="number" name="Telefono" placeholder="Teléfono" id="fortelefono" required >
+                    <input id="botonEnviar" onclick="mod()" type="button" value="Enviar">
+                </form>
+            </div>
+        </div>
+        <!--Modal de Formulario -->
+        
+        <div id="modalContacto">
+    
+            <div id="modalC">
+                <p id="close" onclick="modCerrar()">X</p>
+                <h2>Informaci&oacute;n de contacto</h2>
+                <p id="informacion">Se ha enviado correctamente.</p>
+                <button id="BotonCerrar_Modal" onclick="modCerrar()">Aceptar</button>
+            </div>
+
+        </div>
+     <!--Cierre del modal-->
+    </section>
+    
+     <div id="contenedorRedes">
+         <input type="checkbox" id="btn-mas">
+         <div class="redes">
+            <i href ="#" class="fa-brands fa-instagram-square"></i>
+			<i href ="#" class="fa-brands fa-facebook-square"></i>
+			<i href ="#" class="fa-brands fa-twitter-square"></i>
+            <i href ="#" class="fa-brands fa-youtube"></i>
+         </div>
+         <div class="btn-mas">
+            <label for="btn-mas" class="fa-solid fa-circle-plus"></label>
+         </div>
+     </div>
+    
+    <script>
+        modalBienvenida(); 
+        setInterval(heroSlide,2800);
+        AOS.init();
+    </script>
+</body>
+</html>
+

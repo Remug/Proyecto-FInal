@@ -1,0 +1,556 @@
+*{
+    margin:0 ;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+/* Modal de bienvenida*/
+#modalBienvenida {
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.8);
+	position: fixed;
+	display: none;
+	z-index: 5;
+}
+#modalB {
+	width: 800px;
+	height: 600px;
+    background-color: #fff;
+	position: absolute;
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 50px;
+	text-align: center;
+	border-radius: 25px;
+}
+
+#modalB>h1 {
+	font-size: 2rem;
+	font-weight: normal;
+	color: rgb(69, 173, 74);
+}
+#modalB>p {
+    text-align: left;
+    margin-top: 15px;
+    font-size: 1.3rem;
+}
+#modalB > button {
+	font-size: 1.5rem;
+	padding: 20px 40px;
+	border-radius: 15px;
+	background-color: rgb(69, 173, 74);
+	color: white;
+	margin-top: 20px;
+}
+#modalB>button:hover {
+	color: black;
+	background-color: rgb(72, 143, 176);
+}
+
+
+/*----------------------*/
+/*--------Seccion menu--------*/
+
+nav{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0,0,0,0.4);
+    position:fixed;
+    font-size: 2rem;
+    top: 0;
+    z-index: 4;
+}
+#logo {
+    width: auto;
+    height: 100%;
+    float: left;
+    display: block;
+    margin-left: 100px;
+    padding: 20px;
+
+}
+#menu{
+    width: auto;
+    list-style-type: none;
+    overflow: hidden;
+    float: left;
+    margin-right: 80px;
+    line-height: 50px;
+    margin-left: 800px;
+
+}
+.elementoMenu {
+    float: left;
+    margin: 0px 20px;
+    
+    }
+.elementoMenu >a {
+    color: #fff;
+    font-weight: normal;
+    font-size: 1.8rem;
+    transition-property: color, opacity;
+    transition-duration:0.5s;
+    text-decoration: none;
+}
+.elementoMenu >a:hover{
+    color:cadetblue;
+    border-bottom: 3px solid #fff;
+}
+
+
+/*-----------*/
+
+/*Menu lateral*/
+.barra {
+    width: 20%;
+    height: 19%;
+    transition: 0.4s all;
+    z-index: 1;
+}
+
+.list{
+    padding: 0px;
+    text-align: center;
+
+}
+.puntero {
+    transition: 0.5s all;
+}
+
+.enlace_menuL{
+    text-decoration: none;
+    list-style: none;
+    transition: 0.3s all;
+    font-size: 0px;
+    padding: 0px;
+}
+.Titulo2{
+  text-align: center;
+  color: #fff;
+  padding: 7px;
+  padding-bottom: 7px;
+  font-size: 0px;
+}
+.barra:hover{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(5,33,51,0.4);
+}
+
+.barra:hover h2{
+    padding: 15px;
+    font-size: 2.2rem;
+    color:#fff;
+}
+
+.barra:hover a{
+    font-size: 1.6rem;
+    color:#fff;
+    display: block;
+    padding: 20px;
+}
+
+.barra:hover ol{
+    border-top: 1px solid black;
+    width: 100%;
+}
+
+.barra:hover ul:last-of-type{
+    border-bottom: 1px solid #000;
+}
+.barra:hover a:hover {
+    font-size: 1.8rem;
+    padding: 20px 0px;
+    background-color:rgba(38, 71, 92, 0.7);
+    color:gold;
+}
+#ImgBarra{
+    color: #fff;
+    cursor:pointer;
+    font-size: 40px;
+}
+
+.barra:hover label{
+    visibility: hidden;
+    opacity: 0;
+}
+
+/*-- Seccion de encabezado--*/
+#encabezado{
+    height: 900px;
+    width: 100%;
+    /*position: absolute;*/
+    background-size: cover;
+    background-color: rgb(215, 182, 182);
+}
+
+body{
+    overflow: hidden;
+}
+#tituloP {
+    color: #fff;
+    font-size: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+    top: 150px;
+    z-index: 4;
+}
+#subtitulo{
+    font-size: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+    margin-top: 140px;
+    color:#fff;
+    z-index: 4;
+}
+
+#Contenedor_partido{
+    
+    width: 1400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    z-index: 4;
+    position: relative;
+    margin-top: 40px;
+}
+.contenedor_columna{
+  width: 25%;
+  height: 100%;
+  float:left;
+  text-align: center;
+  border-top: 1px solid #fff;
+}
+.texto1{
+    margin-top: 25px;
+    font-size: 1.8rem;
+    color: #fff;
+    padding-left: 15px;
+}
+#imgR{
+    width: calc(100%-10px);
+    height: 50%;
+}
+#reto{
+    width: 80%;
+    height: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.textoR{
+    margin-top: 25px;
+    font-size: 1.5rem;
+    color: #fff;
+}
+#Descarga{
+    margin-top: 20px;
+    font-size: 1.5rem;
+    z-index: 4;
+    width: 80%;
+    height: 80px;
+    background-color: rgb(34, 152, 179);
+    border-radius: 20px;
+    cursor: pointer;
+    color: #fff;
+}
+#Descarga:hover{
+    background-color: rgba(0,0,0,0.4);
+}
+
+/*Seccion de la informacion*/
+
+#Informacion{
+    width: 100%;
+    height: 900px;
+    background-color: #fff;
+    
+}
+.mitad{
+width: 100%;
+height: 50%;
+border-top: 1px solid #000;
+}
+#PrimerB{
+    
+    background-color: #fff;
+}
+#info{
+    color: rgb(34, 152, 179);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 55px;
+}
+.contenedorInfo{
+   
+    width: 30%;
+    height: 65%;
+    margin-left: 35px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.contenedorPI{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility:hidden;
+    margin-left: 3px;
+    overflow: hidden;
+    transition: .9s;
+}
+.front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0px 5px #000;
+}
+.front >img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.front > h3{
+    width: 100%;
+    position: absolute;
+    height: 45px;
+    bottom: 0;
+    line-height: 45px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+    text-align: center;
+}
+.back{
+    transform: perspective(600px) rotateY(180deg);
+    background-color:rgb(50, 86, 85);
+    padding: 15px;
+    color:#f3f3f3;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+.link{
+    border-top: 1px solid #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+.link > a{
+    color: #f3f3f3;
+    font-size: 1.2rem;
+}
+.back > h3{
+    font-size: 2rem;
+    margin-top: 10px;
+    letter-spacing:2px;
+}
+.back > p{
+    letter-spacing:1px;
+}
+.contenedorInfo:hover .front{
+ transform: perspective(600px) rotateY(180deg);
+}
+.contenedorInfo:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+   }
+
+/*Segunda mitad de la informacion*/
+
+#SegundoB
+{
+ background-color: #000;
+}
+#info2 {
+    color: rgb(34, 152, 179);
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 15px;
+}
+.contenedorFormulario{
+    width: 100%;
+    height: 250px;
+    margin-top: 20px;
+}
+.formularioB{
+    width: 50%;
+    height: 100%;
+    float:  left;
+    
+    margin-top: 20px;
+    border-top: 1px solid #000;
+}
+.Contacto_info{
+	
+	display: block;
+	width: 80%;
+	height: 55px;
+    text-align: center;
+	font-size: 1.56rem;
+    margin-left: auto;
+    margin-right: auto;
+	border-radius: 10px;
+    
+}
+.Contacto_info:hover {
+    border-left: 15px solid #808080;
+}
+.checkC{
+    margin-top: 10px;
+    width: 100%;
+    height: 80px;
+    border-top: 1px solid #000;
+}
+.tipo_checkbox{
+   margin-top: 30px;
+   width: 50px;
+   height: 30px;
+   float: left;
+   background-color: #fff;
+   margin-left: 65px;
+   
+}
+
+.checkC> p{
+ float: left;
+ margin-top: 35px;
+ color: #fff;
+}
+#botonEnviar{
+ display: block;
+ float: left;
+ margin-top: 60px;
+ font-size: 2rem;
+ width: 50%;
+ height: 60px;
+ background-color: rgb(34, 152, 179);
+ border-radius: 20px;
+ cursor: pointer;
+ color: #fff;
+ margin-left: 200px;
+}
+#botonEnviar:hover {
+    color:rgb(34, 152, 179);
+    background-color: #fff;
+}
+
+/*Seccion de pie de pagina*/
+#contenedorRedes{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+#btn-mas{
+    display: none;
+}
+.redes > i, icon-mas2 {
+  display: block;
+  background-color:rgb(34, 152, 179);
+  color: #fff;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  border-radius:50%;
+}
+.btn-mas > label {
+    display: block;
+    background-color:rgb(34, 152, 179);
+    color: #fff;
+    font-size: 2.2rem;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    border-radius:50%;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.redes i:hover{
+ background-color: #fff;
+ color:rgb(34, 152, 179)
+}
+.redes > i{
+ margin-bottom: -15px;
+ opacity: 0;
+ visibility: hidden;
+}
+#btn-mas:checked~ .redes i {
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+}
+.redes >i {
+    font-size: 2.2rem;
+}
+
+/*Modal de Formulario*/
+
+#modalContacto{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    top:0px;
+    display:none;
+    z-index: 5;
+}
+#modalC{
+
+    width: 700px;
+    height: 350px;
+    background-color: rgba(255,255,255,0.7);
+    position:absolute;
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 50px;
+	text-align: center;
+	border-radius: 25px;
+}
+#close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background-color: #c44a4a;
+	color : white;
+	list-style: 25px;
+	cursor: pointer;
+	border-radius: 10px;
+}
+#modalC > h2{
+    font-weight: normal;
+    font-size: 2.5rem;
+}
+#informacion {
+	font-size: 1.5rem;
+	text-align: center;
+	font-weight: normal;
+	margin-top: 25px;
+	margin-bottom: 40px;
+}
+#modalC>button {
+	font-size: 1.8rem;
+	padding: 15px 30px;
+	border-radius: 15px;
+	background-color: rgb(34, 152, 179);
+	color: white;
+	margin-top: 10px;
+}
+#modalC>button:hover {
+	color: rgb(34, 152, 179);
+    background-color: #fff;
+}
